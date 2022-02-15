@@ -1,0 +1,575 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1794,1429" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="76">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TRT" sap:VirtualizedContainerService.HintSize="690,1364" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="NextStep" />
+      <Variable x:TypeArguments="x:String" Name="SystemException" />
+      <Variable x:TypeArguments="sd:DataTable" Name="PlanilhaExcel" />
+      <Variable x:TypeArguments="x:String" Default="Cópia de PROCESSOS TRT2 - FÍSICOS(233).xlsx" Name="CaminhoPlanilhaExcel" />
+      <Variable x:TypeArguments="x:String" Name="númeroInteiro" />
+      <Variable x:TypeArguments="x:String" Name="númeroDoProcesso" />
+      <Variable x:TypeArguments="x:String" Name="númeroDoDigito" />
+      <Variable x:TypeArguments="x:String" Name="númeroDoAno" />
+      <Variable x:TypeArguments="x:String" Name="númeroDoVara" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap2010:Annotation.AnnotationText="início do processo" DisplayName="flow 1" sap:VirtualizedContainerService.HintSize="648,1272" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">330,2.5</av:Point>
+          <av:Size x:Key="ShapeSize">60,75</av:Size>
+          <x:Double x:Key="Height">1205</x:Double>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <av:PointCollection x:Key="ConnectorLocation">330,40 130,40 130,157</av:PointCollection>
+          <x:Double x:Key="Width">614</x:Double>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID5</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">30,157</av:Point>
+            <av:Size x:Key="ShapeSize">200,123</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">230,218.5 320,218.5 320,286.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence sap2010:Annotation.AnnotationText="irá fechar aba do google chrome e do excel caso alguma esteja aberta" DisplayName="fechar abas" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="438,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+            </Assign.Value>
+          </Assign>
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,822" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch.Try>
+              <Sequence sap:VirtualizedContainerService.HintSize="376,595" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" sap2010:Annotation.AnnotationText="fechar google&#xA;chrome&#xA;" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="334,189" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:KillProcess>
+                <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" sap2010:Annotation.AnnotationText="fechar excel&#xA;" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="334,174" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="excel">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:KillProcess>
+                <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </TryCatch.Try>
+            <TryCatch.Catches>
+              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ActivityAction x:TypeArguments="s:Exception">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,280" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[SystemException]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[SystemException]" />
+                  </Sequence>
+                </ActivityAction>
+              </Catch>
+            </TryCatch.Catches>
+          </TryCatch>
+        </Sequence>
+        <FlowStep.Next>
+          <FlowDecision x:Name="__ReferenceID4" Condition="[NextStep = True]" DisplayName="fechou" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">285,286.5</av:Point>
+                <av:Size x:Key="ShapeSize">70,87</av:Size>
+                <av:PointCollection x:Key="TrueConnector">285,330 130,330 130,386</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <FlowDecision.True>
+              <FlowStep x:Name="__ReferenceID3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">30,386</av:Point>
+                    <av:Size x:Key="ShapeSize">200,108</av:Size>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence sap2010:Annotation.AnnotationText="irá ler a planilha e verificar o status dos processos" DisplayName="ler planilha excel" sap:VirtualizedContainerService.HintSize="1211,2279" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="1169,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1169,2056" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                    <TryCatch.Try>
+                      <Sequence sap:VirtualizedContainerService.HintSize="1131,1829" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="ler excel&#xA;" DataTable="[PlanilhaExcel]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1089,129" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Processos TRT 2 - Físico" WorkbookPath="[CaminhoPlanilhaExcel]">
+                          <ui:ReadRange.Range>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ui:ReadRange.Range>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ReadRange>
+                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="verificar status dos processos e organizar o processo para ser executado no site &#xA;" DataTable="[PlanilhaExcel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1089,1468" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                          <ui:ForEachRow.Body>
+                            <ActivityAction x:TypeArguments="sd:DataRow">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                              </ActivityAction.Argument>
+                              <Sequence sap:VirtualizedContainerService.HintSize="1055,1306" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1013,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Row(0).ToString + Row(1).ToString]" />
+                                <ui:MultipleAssign sap2010:Annotation.AnnotationText="essa tarefa separa o número do processo inteiro em 4 partes (processo-dígito-ano-vara) para os dados serem colocados no site" DisplayName="separar o número do processo" sap:VirtualizedContainerService.HintSize="1013,248" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                  <ui:MultipleAssign.AssignOperations>
+                                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:String">[númeroDoProcesso]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(row(0).ToString, "[0-9]{7}").Value]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:String">[númeroDoDigito]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(row(0).ToString, "(?&lt;=-)([0-9]{2})").Value]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:String">[númeroDoAno]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(row(0).ToString, "(?&lt;=[.])([0-9]{4})(?=[.])").Value]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:String">[númeroDoVara]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(row(0).ToString, "[0-9]{4}$").Value]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                    </scg:List>
+                                  </ui:MultipleAssign.AssignOperations>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:MultipleAssign>
+                                <If Condition="[Row(1).ToString = &quot;realizado&quot;]" sap:VirtualizedContainerService.HintSize="1013,825" sap2010:WorkflowViewState.IdRef="If_1">
+                                  <If.Then>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;processo realizado&quot;]" />
+                                  </If.Then>
+                                  <If.Else>
+                                    <Flowchart sap2010:Annotation.AnnotationText="abrir site, inserir os números, consultar, captcha" DisplayName="flowchart do site " sap:VirtualizedContainerService.HintSize="634,667" sap2010:WorkflowViewState.IdRef="Flowchart_3">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+                                          <av:Size x:Key="ShapeSize">60,75</av:Size>
+                                          <av:PointCollection x:Key="ConnectorLocation">270,40 120,40 120,107</av:PointCollection>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Flowchart.StartNode>
+                                        <x:Reference>__ReferenceID2</x:Reference>
+                                      </Flowchart.StartNode>
+                                      <FlowStep x:Name="__ReferenceID2">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <av:Point x:Key="ShapeLocation">20,107</av:Point>
+                                            <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                            <av:PointCollection x:Key="ConnectorLocation">120,173 120,267</av:PointCollection>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Sequence DisplayName="abrir site" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="468,332" sap2010:WorkflowViewState.IdRef="OpenBrowser_6" Url="https://ww2.trt2.jus.br">
+                                            <ui:OpenBrowser.Body>
+                                              <ActivityAction x:TypeArguments="x:Object">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                                </ActivityAction.Argument>
+                                                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Início - Tribunal Regional do Trabalho da 2ª Região" sap:VirtualizedContainerService.HintSize="434,231" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="Simulate" Version="V1">
+                                                  <uix:NApplicationCard.Body>
+                                                    <ActivityAction x:TypeArguments="x:Object">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                      </ActivityAction.Argument>
+                                                    </ActivityAction>
+                                                  </uix:NApplicationCard.Body>
+                                                  <uix:NApplicationCard.TargetApp>
+                                                    <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a79740d1ccc02a6cb636edd87a25a18f.png" Selector="&lt;html app='chrome.exe' title='Início - Tribunal Regional do Trabalho da 2ª Região'/&gt;" Url="https://ww2.trt2.jus.br/" />
+                                                  </uix:NApplicationCard.TargetApp>
+                                                </uix:NApplicationCard>
+                                              </ActivityAction>
+                                            </ui:OpenBrowser.Body>
+                                          </ui:OpenBrowser>
+                                        </Sequence>
+                                        <FlowStep.Next>
+                                          <FlowStep x:Name="__ReferenceID0">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <av:Point x:Key="ShapeLocation">20,267</av:Point>
+                                                <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                                <av:PointCollection x:Key="ConnectorLocation">120,333 120,417</av:PointCollection>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Sequence DisplayName="inserir número no site" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Início - Tribunal Regional do Trabalho da 2ª Região" sap:VirtualizedContainerService.HintSize="434,1334" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="Simulate" Version="V1">
+                                                <uix:NApplicationCard.Body>
+                                                  <ActivityAction x:TypeArguments="x:Object">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="376,1118" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Consulta Processual'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[númeroDoProcesso]">
+                                                        <uix:NTypeInto.Target>
+                                                          <uix:TargetAnchorable BrowserURL="https://ww2.trt2.jus.br/" DesignTimeRectangle="721, 282, 97, 32" ElementType="InputBox" FriendlyName="'INPUT input-numero'" FullSelectorArgument="&lt;webctrl id='input-numero' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-numero' tag='INPUT' type='text' aaname='Consulta Processual' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAkCAYAAACQePQGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHASURBVGhD7ZY9jsIwEEb3wGkp6dLR0aak4AqRaDgABVLEGRC5xKxn7HHshGgViyzD7vckS/gnY3lePOSLgDkgxSBRyuVyQXtzUzIp4H1AikEgxSCQYhBIMQikGARSDAIpBoEUg6wspad2t6Vqd6Z7GAE/s0xKd6Rqs6WmC/2IT3596kM/8DhTDSGLKZJSbY50DUOeOSk9hBSwXMruSA2XpMMtDDK5lPtpPypZN2qSGybz7vnrgQX7xnMyHvrP4se5NHa4ja3G0ufiC8RtT+3DD38CBVJcQjgR7rBDGSuQ8qQfEyrxNZHTWygys7WjWypCEhHjvnHKpLifPpFaxgqkpPOZBMbHk/XJngMcL6yfeTaT5MhEGqdYih7eH/QVUtL/qUGKl88laNzmpOR7KRLn70txhNLRdCtLyWKNgJRpKZHDuqTUK0mRPSdfewkTKfkLovyT8qX4JHBJiYmQRA6J8uIKpWj8NKGpqIkUx2j/Sd84L5DikMTkb2f6uVufbkmSl0ph/E3TeNnNeSaFERG6/nOEMMukgF8BUgwCKQaBFINAikEgxSCQYhBIMQikGARSDDIrBe29TYlSgB0gxRxE38L2AQmyfaw1AAAAAElFTkSuQmCC" InformativeScreenshot="a720851aaeb4dbfe20a191ebcddf7d8a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Início - Tribunal Regional do Trabalho da 2ª Região' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                            <uix:TargetAnchorable.Anchors>
+                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                <uix:Target DesignTimeRectangle="547, 283, 167, 32" ElementType="Text" FriendlyName="'Consulta Processual'" FullSelectorArgument="&lt;webctrl id='label-consulta' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-consulta' tag='LABEL' type='' aaname='Consulta Processual' check:text='Consulta Processual' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAkCAYAAAD2DsoUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMwSURBVHhe7ZcxbtwwEEVzhJwox8kpfAyfwK1rH8DA1tva7TZGSgOGa2Ul8Y+Gf8jIWivJLPw/8IsVRWrm85Gwvw2SdCUSrNLVyGD9/uOnLKc0JFjl9IYEq5zekGCV0xsSrHJ6Q4JVTm9IsMrpDQlWOb0hwSqnNyRY5fSGLob15vheZkIvw13jvf/rw/AcarsfHt/eh8db/97HfXeaFox6expuGu9/Hbey3sfQRbB2N2y4HIK/Yw5wBPVzdfZ7P+tLA5sR1oeXMoNvq/L4dFjevX0aXsvjSX7sbGz889G/VzcbbnC3BsZej/flGerAGj5AV2PRPK/3fKnB22p+8M/rjbK6Ti+lr+Vw1LA3Do3lO6v+DufB81EHROO0dnW4sFfuGb611MDrt8bq/dvD0GZY25t19thsq3mWe6d7SwFIDrcIMO0Ba7uG/s27BVZT6bnXr63V6RfjYd1J6DX2N6uM9/YDWa/CurJ+PlgZhr6xMRGkJXzbPIYTgZXfvZtuG6x+fCuMcbyp0odB1Ty8Lruq35iPjU/rNrKv8mmMe+P7yLo33oWVzVmmhbW/2bM7hRN8EYwyzwLDOot8cHvCaoAVbYbVQRDraj+r613b7JiFiQ8J5A+LfWtRVcsGWOsM0sL6h5tnapahoMI3w1pst1IRbc4SOgfGvyOsXEO3v+K18dFNMKn32TvBSnmhxll8MGkdzG3AWvfK2fHvtfovN7T/P1ilWTS6bM7yTh+M0jDDaq4DsZsEt1qojQNcCzjWyL4YVjtwLjfUO/W7fNvmVQBh3M1fcbMOM2UR6kM2pdcAM8Yzw+pCjULhZ1vzJAfiGqwGIyvAyeLA8ZtqP/2yDWHtDuvZmMuytTr9YLyXxzy+wFWr7EkvqwBf1LR+bz9zwzo7Btcokht0f9eN/sjNGr7jxvwao16PB7p9GgH6TRvr8b/HtVEz1Qp/BtbRNbDucMMEFa/BedTjEbiqzgAs7RllcVe+hTWqb7vs5hoSwyrL/8qQYJXTGxKscnpDglVOb0iwyukNCVY5vSHBKqc3JFjl9IYEq5zekGCV0xsSrHJ6Q4JVTm/IYJWk7BKs0pVoGH4D7eoBLmiTe2AAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                              </scg:List>
+                                                            </uix:TargetAnchorable.Anchors>
+                                                          </uix:TargetAnchorable>
+                                                        </uix:NTypeInto.Target>
+                                                      </uix:NTypeInto>
+                                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Consulta Processual'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[númeroDoDigito]">
+                                                        <uix:NTypeInto.Target>
+                                                          <uix:TargetAnchorable BrowserURL="https://ww2.trt2.jus.br/" DesignTimeRectangle="824, 282, 37, 32" ElementType="InputBox" FriendlyName="'INPUT input-digito'" FullSelectorArgument="&lt;webctrl id='input-digito' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-digito' tag='INPUT' type='text' aaname='Dígito' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAAkCAYAAAAU/hMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEgSURBVFhH7ZSxCoMwEED7wa4du7m5uTo6+AuCix/gIIjfIPoT1+SSqIlJIXjVCHlwlEsg97xL+oIH8CzJruuCC4UmGRJRkoooSUWUpCJKUvEnyQXq7ANJ1sIkV87gJzlUkLxZcTNMmbmF1EOwL9kZ5SizI/6SluJYZL8+LyQdVJBIqvGmzSJS3sl3Bb3IEPwQ2fm0aaFgv8Ww2+OdZOfbIJIEmJp8G5khiXu7XAkfJB2QSWp7mqToshJCcD8oyZGNNod6xkTC126QdI87GMlfDyeQcWOR/bomecfDYYcfwixgSHKUGA/xF7RdAVpJMmz31M0FksZ9ZeD4HQ/QxjWdlA9lvR4egpxrJE8SJamIklRESSqckqGFYpUMmQdIAnwBHU8YT2/KGhsAAAAASUVORK5CYII=" InformativeScreenshot="976c4f9e623bf8519f8f877308c5259b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Início - Tribunal Regional do Trabalho da 2ª Região' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                            <uix:TargetAnchorable.Anchors>
+                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                <uix:Target DesignTimeRectangle="547, 283, 167, 32" ElementType="Text" FriendlyName="'Consulta Processual'" FullSelectorArgument="&lt;webctrl id='label-consulta' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-consulta' tag='LABEL' type='' aaname='Consulta Processual' check:text='Consulta Processual' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAkCAYAAAD2DsoUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMwSURBVHhe7ZcxbtwwEEVzhJwox8kpfAyfwK1rH8DA1tva7TZGSgOGa2Ul8Y+Gf8jIWivJLPw/8IsVRWrm85Gwvw2SdCUSrNLVyGD9/uOnLKc0JFjl9IYEq5zekGCV0xsSrHJ6Q4JVTm9IsMrpDQlWOb0hwSqnNyRY5fSGLob15vheZkIvw13jvf/rw/AcarsfHt/eh8db/97HfXeaFox6expuGu9/Hbey3sfQRbB2N2y4HIK/Yw5wBPVzdfZ7P+tLA5sR1oeXMoNvq/L4dFjevX0aXsvjSX7sbGz889G/VzcbbnC3BsZej/flGerAGj5AV2PRPK/3fKnB22p+8M/rjbK6Ti+lr+Vw1LA3Do3lO6v+DufB81EHROO0dnW4sFfuGb611MDrt8bq/dvD0GZY25t19thsq3mWe6d7SwFIDrcIMO0Ba7uG/s27BVZT6bnXr63V6RfjYd1J6DX2N6uM9/YDWa/CurJ+PlgZhr6xMRGkJXzbPIYTgZXfvZtuG6x+fCuMcbyp0odB1Ty8Lruq35iPjU/rNrKv8mmMe+P7yLo33oWVzVmmhbW/2bM7hRN8EYwyzwLDOot8cHvCaoAVbYbVQRDraj+r613b7JiFiQ8J5A+LfWtRVcsGWOsM0sL6h5tnapahoMI3w1pst1IRbc4SOgfGvyOsXEO3v+K18dFNMKn32TvBSnmhxll8MGkdzG3AWvfK2fHvtfovN7T/P1ilWTS6bM7yTh+M0jDDaq4DsZsEt1qojQNcCzjWyL4YVjtwLjfUO/W7fNvmVQBh3M1fcbMOM2UR6kM2pdcAM8Yzw+pCjULhZ1vzJAfiGqwGIyvAyeLA8ZtqP/2yDWHtDuvZmMuytTr9YLyXxzy+wFWr7EkvqwBf1LR+bz9zwzo7Btcokht0f9eN/sjNGr7jxvwao16PB7p9GgH6TRvr8b/HtVEz1Qp/BtbRNbDucMMEFa/BedTjEbiqzgAs7RllcVe+hTWqb7vs5hoSwyrL/8qQYJXTGxKscnpDglVOb0iwyukNCVY5vSHBKqc3JFjl9IYEq5zekGCV0xsSrHJ6Q4JVTm/IYJWk7BKs0pVoGH4D7eoBLmiTe2AAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                              </scg:List>
+                                                            </uix:TargetAnchorable.Anchors>
+                                                          </uix:TargetAnchorable>
+                                                        </uix:NTypeInto.Target>
+                                                      </uix:NTypeInto>
+                                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Consulta Processual'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="[númeroDoAno]">
+                                                        <uix:NTypeInto.Target>
+                                                          <uix:TargetAnchorable BrowserURL="https://ww2.trt2.jus.br/" DesignTimeRectangle="867, 282, 67, 32" ElementType="InputBox" FriendlyName="'INPUT input-ano'" FullSelectorArgument="&lt;webctrl id='input-ano' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-ano' tag='INPUT' type='text' aaname='Ano' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAkCAYAAADb0CfrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE9SURBVGhD7dY9DoIwGMZxD+zK6Obm5srowBVIXDwAgwnhDEQv8dq3H0irfQxMCM8/6UABk/4oxJ2wbMQBDThN03D4EYpwWOxAnCTigIgDIg6IOCDigIgDIg6IOKCZOE+pTwfZF5Xc/cwam4fTVrI/VVIaoOP16SfX1yyc+8Wh9NezQbpJ7+dtj5sczY6q9Vyhu8uM9BrFDeeKs9QPP7+wZuB0UoYFWYhkcXbOLPrS+Qm9frTDLMzonvR4QU3GSXeL7qI3hOkL2Psa961KX8WP31hIE3Hc4srWH2r2yY8+zBDH7aLofpMF/3uc6FsRj2E3bBUnt/3tfHjVtvpafXvqtjEIxDGt9YOc/9Pn/xQqwC8cLXo9lwmjTcLZWsQBEQdEHBBxQMQBEQdEHBBxQMQBZXE43AgNOOwz4mQTeQEcoNsEUPvJeQAAAABJRU5ErkJggg==" InformativeScreenshot="380c1013f4202b35295371492a956ef3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Início - Tribunal Regional do Trabalho da 2ª Região' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                            <uix:TargetAnchorable.Anchors>
+                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                <uix:Target DesignTimeRectangle="547, 283, 167, 32" ElementType="Text" FriendlyName="'Consulta Processual'" FullSelectorArgument="&lt;webctrl id='label-consulta' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-consulta' tag='LABEL' type='' aaname='Consulta Processual' check:text='Consulta Processual' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAkCAYAAAD2DsoUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMwSURBVHhe7ZcxbtwwEEVzhJwox8kpfAyfwK1rH8DA1tva7TZGSgOGa2Ul8Y+Gf8jIWivJLPw/8IsVRWrm85Gwvw2SdCUSrNLVyGD9/uOnLKc0JFjl9IYEq5zekGCV0xsSrHJ6Q4JVTm9IsMrpDQlWOb0hwSqnNyRY5fSGLob15vheZkIvw13jvf/rw/AcarsfHt/eh8db/97HfXeaFox6expuGu9/Hbey3sfQRbB2N2y4HIK/Yw5wBPVzdfZ7P+tLA5sR1oeXMoNvq/L4dFjevX0aXsvjSX7sbGz889G/VzcbbnC3BsZej/flGerAGj5AV2PRPK/3fKnB22p+8M/rjbK6Ti+lr+Vw1LA3Do3lO6v+DufB81EHROO0dnW4sFfuGb611MDrt8bq/dvD0GZY25t19thsq3mWe6d7SwFIDrcIMO0Ba7uG/s27BVZT6bnXr63V6RfjYd1J6DX2N6uM9/YDWa/CurJ+PlgZhr6xMRGkJXzbPIYTgZXfvZtuG6x+fCuMcbyp0odB1Ty8Lruq35iPjU/rNrKv8mmMe+P7yLo33oWVzVmmhbW/2bM7hRN8EYwyzwLDOot8cHvCaoAVbYbVQRDraj+r613b7JiFiQ8J5A+LfWtRVcsGWOsM0sL6h5tnapahoMI3w1pst1IRbc4SOgfGvyOsXEO3v+K18dFNMKn32TvBSnmhxll8MGkdzG3AWvfK2fHvtfovN7T/P1ilWTS6bM7yTh+M0jDDaq4DsZsEt1qojQNcCzjWyL4YVjtwLjfUO/W7fNvmVQBh3M1fcbMOM2UR6kM2pdcAM8Yzw+pCjULhZ1vzJAfiGqwGIyvAyeLA8ZtqP/2yDWHtDuvZmMuytTr9YLyXxzy+wFWr7EkvqwBf1LR+bz9zwzo7Btcokht0f9eN/sjNGr7jxvwao16PB7p9GgH6TRvr8b/HtVEz1Qp/BtbRNbDucMMEFa/BedTjEbiqzgAs7RllcVe+hTWqb7vs5hoSwyrL/8qQYJXTGxKscnpDglVOb0iwyukNCVY5vSHBKqc3JFjl9IYEq5zekGCV0xsSrHJ6Q4JVTm/IYJWk7BKs0pVoGH4D7eoBLmiTe2AAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                              </scg:List>
+                                                            </uix:TargetAnchorable.Anchors>
+                                                          </uix:TargetAnchorable>
+                                                        </uix:NTypeInto.Target>
+                                                      </uix:NTypeInto>
+                                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Consulta Processual'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Text="[númeroDoVara]">
+                                                        <uix:NTypeInto.Target>
+                                                          <uix:TargetAnchorable BrowserURL="https://ww2.trt2.jus.br/" DesignTimeRectangle="1071, 282, 77, 32" ElementType="InputBox" FriendlyName="'INPUT input-vara'" FullSelectorArgument="&lt;webctrl id='input-vara' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-vara' tag='INPUT' type='text' aaname='Vara' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAAkCAYAAADxYNZEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF0SURBVGhD7ZYxrsIwDIY5MCtjt25srIwMXAGpSw/QoRLiDAguYRI3Dm5aeAQ88Mj/SRncupHyxU6zIPAxkGhAlNh1HUbmEEYSwetAogGQaAAkGgCJBkCiAZBoACQaAIkGQKIBWRKXqw0dLiFI6HcVLXenEJVFlsTDuqK6uYZIcWmpXlW0PYa4MLIknpuNq8Y99SEW+Pm6pbMPjnuX46oyjnu+z6ublrbh3SD9ypujv5ndqC8mSyLRiQWMK26QwAtngbrlh3xp82ET9PsgUB0D05zvJ1PizNnH4qbVKej8UcU+go+GH5eYLnL2hxLOyNiiL0jkeeI3vy5Rty+3q1qwkict/1clRnnyvIhK9PgWdovuEyksKanK5xKTTfAUI1F+GKriPKkkjn3eU4l6Dpm3CIkiKP2hJNcVJ0/nTSU6RlciL28Q+Z+uOW9LBHcg0QBINAASDYBEAyDRAEg0ABINgEQDINGAhxIx8oYQJYL3gcSPIboBvntO9vt0yoQAAAAASUVORK5CYII=" InformativeScreenshot="fc4e9adb6464719c76697c7050801b4f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Início - Tribunal Regional do Trabalho da 2ª Região' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                            <uix:TargetAnchorable.Anchors>
+                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                <uix:Target DesignTimeRectangle="547, 283, 167, 32" ElementType="Text" FriendlyName="'Consulta Processual'" FullSelectorArgument="&lt;webctrl id='label-consulta' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label-consulta' tag='LABEL' type='' aaname='Consulta Processual' check:text='Consulta Processual' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAkCAYAAAD2DsoUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMwSURBVHhe7ZcxbtwwEEVzhJwox8kpfAyfwK1rH8DA1tva7TZGSgOGa2Ul8Y+Gf8jIWivJLPw/8IsVRWrm85Gwvw2SdCUSrNLVyGD9/uOnLKc0JFjl9IYEq5zekGCV0xsSrHJ6Q4JVTm9IsMrpDQlWOb0hwSqnNyRY5fSGLob15vheZkIvw13jvf/rw/AcarsfHt/eh8db/97HfXeaFox6expuGu9/Hbey3sfQRbB2N2y4HIK/Yw5wBPVzdfZ7P+tLA5sR1oeXMoNvq/L4dFjevX0aXsvjSX7sbGz889G/VzcbbnC3BsZej/flGerAGj5AV2PRPK/3fKnB22p+8M/rjbK6Ti+lr+Vw1LA3Do3lO6v+DufB81EHROO0dnW4sFfuGb611MDrt8bq/dvD0GZY25t19thsq3mWe6d7SwFIDrcIMO0Ba7uG/s27BVZT6bnXr63V6RfjYd1J6DX2N6uM9/YDWa/CurJ+PlgZhr6xMRGkJXzbPIYTgZXfvZtuG6x+fCuMcbyp0odB1Ty8Lruq35iPjU/rNrKv8mmMe+P7yLo33oWVzVmmhbW/2bM7hRN8EYwyzwLDOot8cHvCaoAVbYbVQRDraj+r613b7JiFiQ8J5A+LfWtRVcsGWOsM0sL6h5tnapahoMI3w1pst1IRbc4SOgfGvyOsXEO3v+K18dFNMKn32TvBSnmhxll8MGkdzG3AWvfK2fHvtfovN7T/P1ilWTS6bM7yTh+M0jDDaq4DsZsEt1qojQNcCzjWyL4YVjtwLjfUO/W7fNvmVQBh3M1fcbMOM2UR6kM2pdcAM8Yzw+pCjULhZ1vzJAfiGqwGIyvAyeLA8ZtqP/2yDWHtDuvZmMuytTr9YLyXxzy+wFWr7EkvqwBf1LR+bz9zwzo7Btcokht0f9eN/sjNGr7jxvwao16PB7p9GgH6TRvr8b/HtVEz1Qp/BtbRNbDucMMEFa/BedTjEbiqzgAs7RllcVe+hTWqb7vs5hoSwyrL/8qQYJXTGxKscnpDglVOb0iwyukNCVY5vSHBKqc3JFjl9IYEq5zekGCV0xsSrHJ6Q4JVTm/IYJWk7BKs0pVoGH4D7eoBLmiTe2AAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                              </scg:List>
+                                                            </uix:TargetAnchorable.Anchors>
+                                                          </uix:TargetAnchorable>
+                                                        </uix:NTypeInto.Target>
+                                                      </uix:NTypeInto>
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </uix:NApplicationCard.Body>
+                                                <uix:NApplicationCard.TargetApp>
+                                                  <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="270aa73164d0c46d63c7eb6b25b5dc99.png" Selector="&lt;html app='chrome.exe' title='Início - Tribunal Regional do Trabalho da 2ª Região'/&gt;" Url="https://ww2.trt2.jus.br/" />
+                                                </uix:NApplicationCard.TargetApp>
+                                              </uix:NApplicationCard>
+                                            </Sequence>
+                                            <FlowStep.Next>
+                                              <FlowStep x:Name="__ReferenceID1">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <av:Point x:Key="ShapeLocation">20,417</av:Point>
+                                                    <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Sequence DisplayName="clicar em consultar" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Início - Tribunal Regional do Trabalho da 2ª Região" sap:VirtualizedContainerService.HintSize="434,682" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="Simulate" Version="V1">
+                                                    <uix:NApplicationCard.Body>
+                                                      <ActivityAction x:TypeArguments="x:Object">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                        </ActivityAction.Argument>
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="376,466" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NClick ClickType="Single" DisplayName="Click 'Consultar'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://ww2.trt2.jus.br/" DesignTimeRectangle="1154, 282, 105, 32" ElementType="Button" FriendlyName="'Consultar'" FullSelectorArgument="&lt;webctrl parentid='consulta-processual' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='consulta-processual' tag='BUTTON' type='submit' aaname='Consultar' check:text='Consultar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAkCAYAAACDr7TyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHiSURBVGhD7ZY7joMwFEWz01lEytlK+qwgJUV6aOko09BQRSk9Afv5+YNjRkGGh+6VjhSD8e/YVk4KERdIExgrra5rsHMonrTT7w/YKZAmEEgTCKQJBNIEAmkCgTSBQJpAIE0gkCaQotIuvemA8mrVeabettxVOw3uoS7eM7e8LYWkXVX1Mo1H2c9iaEJpcxK3pYi0c/fUDXsnixZDqaG7cv1bqwbzfEp/53fOAlbU5hivTrxB2obe8WnnZ6ZNOzZXEo+Ror+L+3DnYPvoH/rHysILSKMJPlV1C94170m5Cx4Ko0QLGockRFfwFO57DWlL+7DxNtX3FJAWLkoamizvWt7RepF5EUNJ9I0uz2wQA9VfJm2uHBO2SeW1ZRHlpGWviES98TS+o6XM1PHec5njt7emNHvtm4TSuI91KSAtcz3axaJ6X0ozLF5QupL/IS11sg4kLf9HhK4RmiwLSF2PeWkWOnmJPuKx5aSF5XCMB5HmCYriCFj8RyQljRcwDC1geAJtstJ0hq5LzuVg0jQ0GRvv5BkW/uWflzY+i8X5p9B/3zamzQ8bwxU9tUWnd8z4HY05OM2HkAbWAdIEAmkCgTSBQJpAIE0gkCYQSBMIpAkE0gSSlAb2DcVKQ+QE0sRFqT8zRlTyfDiThQAAAABJRU5ErkJggg==" InformativeScreenshot="f4bc597d1100b81ca2464de89eae74a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Início - Tribunal Regional do Trabalho da 2ª Região' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target DesignTimeRectangle="1265, 282, 105, 32" ElementType="Button" FriendlyName="'Limpar'" FullSelectorArgument="&lt;webctrl aaname='Limpar' parentid='consulta-processual' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Limpar' parentid='consulta-processual' tag='BUTTON' type='' check:text='Limpar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAkCAYAAACDr7TyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVGhD7ZY7roMwEEWz0ywiZbaSPitISZGetO4oadJQIcp5MfbYGOPuyeGGe6UjgX+DfGSLkzBwoTTABGlt25Kdo0mkna5nslMoDRBKA4TSAKE0QCgNEEoDhNIAoTRAKA2Q/Uh7GBls8cnIZav/w+09f56Y13b/UYCSRhy4J20xvvHtIqM0j0WfzfsZ5l+6cW4aOiNmfrLxc7TOq/ftml5u2nd9+nm9GK25WL8W+NLWmcasXa9TlZbHiymtGcSotJhvXNU/IE1PStzQobsn4/U9SAs17tJMrmlz87NvijW+IUvBl5YJiNddvA5TacmG++tQxzhWJyqTtrwy63NIaYmgpbT1mlkNSkupKC2f49bMpOpPCaUVUAlb8Zv2b9KyOAnFfkorUFFa+Zc/njwbW8fV1DGUVp21RFQoDRBKA+RQ0n4FSgOE0gChNEAoDRBKA4TSAClKI/tGE6QxOKE0uIj8AcYynkpQo6NVAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NClick.Target>
+                                                          </uix:NClick>
+                                                          <uix:NClick ClickType="Single" DisplayName="Click 'Consultar'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://ww2.trt2.jus.br/servicos/consultas/consulta-processual/consulta-processual/?numero=1121221&amp;digito=11&amp;ano=2012&amp;justica=5&amp;tribunal=02&amp;vara=2020" DesignTimeRectangle="1154, 333, 121, 32" ElementType="Button" FriendlyName="'Consultar'" FullSelectorArgument="&lt;webctrl parentid='c6845' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='c6845' tag='BUTTON' type='' aaname='Consultar' check:text='Consultar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAkCAYAAACkATUaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI4SURBVHhe7ZY9ksIwDIW56R5iy70KPSegpKCHNh0lDQ0VQ+klxrGfleeQXTATIr2Z1zj+ifTJShbOpE4GXaEi9N1uZ565O2XQFz9f5pnaoCu0QVdog67QBl2hDbpCG3SFNugKbdAV2qAr9Buhr9zmGg4ANXs295MMcZ22+bP98TZ4dEscm4DfA90HPyCZrI8yh/59uIRBjdDXjTuHfYd0Pqz4+snboPe8PIVNW4kbnRJz07Vx3/DMu9chLm6zLs1pn8lPCEk46zqy00Ch5p+frWvCeFojoct3CIL4sriDZNHHvN3WLWH+Ky5HZegsSbl9cAR4VixCWeCPPh0Ifmguvl9F6Ax4J4yLx0+K/h+uC72YvAcGODwREDyChOLBpHVnxzF662DPp6Df5/L2ntanfWF94f1fcbvRk4TO4NydkhYTAdCzM8jZmMjsZktXgy4sOw+F/vp/gglC50ksPouJE62PnQ1jSaRl1oQuQaMY9F7hP++60GmScvvgssAqQu9MEw9wakEXRXffG9bPA/pwS02JaZWSUw54qL3/AToa5sU9a0GP74q3f4bQZXWXlP2swE3E8VRAAHg0dJ5cDhLGGIhWT0GHYoKx+UBvjYExkcCyBAtlt280dJzLhOsBZEkPoPfO8jFCMTHNCro3T2TePoV7kATYbM4I6N4s8dhuO8v3bfcf397768MZovP5TkZimAl081Rs0BXaoCu0QVdog67QBl2hDbpCF6Gb5+1OEbpJjwy6Ojn3C+xWxpcLW+E8AAAAAElFTkSuQmCC" InformativeScreenshot="a3a3e2304068fe97159a184e0ba960de.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta Processual - Tribunal Regional do Trabalho da 2ª Região' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target DesignTimeRectangle="447, 335, 311, 32" ElementType="Text" FriendlyName="'PROCESSO FÍSICO'" FullSelectorArgument="&lt;webctrl parentid='c6845' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='c6845' tag='LABEL' type='' aaname='PROCESSO FÍSICO DE 1º GRAU' check:text='PROCESSO FÍSICO DE 1º GRAU' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATsAAAAkCAYAAAD2K509AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVZSURBVHhe7Zg9ktQwEIU5AifiOJyCY3ACUuI9AFXEpGxKsvFWUcRGHrutJ7lbasmexWjeq/qCHeuvu6Vned9NFEVRDyCaHUVRD6HN7N5/+EgIIcMhotkRQoZGRLMjhAyNiGZHCBkaEc2OEDI0IpodcfHpx591p7xMX5TnhFwVEc2OOPg+Pd92yZ/p22ftOSHXRUSzI3WeXm575PlJeUbIxRHR7AghQyM63ey+/FoHNJTfDmrty/8j+jp9+702Q/36rrRF9H7azaW+vqDfP6dPST99/NcfX6HNkfYzvbFH6rHJZyvM1R1raYzsOah8m7x3DozP9vWmW1bLJ3+MY583+RfCIv/t2shNQ+4Tqf0i8X+6QWb+YR6tzeef0+v6+MyvCNGbm90sLKjLTLSN49hwasJq/bIiNJsdFExVXuTW9jO9sWccNrumtRtjzDTWxNUn6JwcKAbkmLvF7HAN6VySs+WFvxiKY9zm3DjM7ibr4pH3d7TTajqi2WEyfO2DMDm1Q7Yp2xjOfs1mDIfX0x4L2dq+O3aF+txls2tbuz5GT03eNgeLkhqcZnbprW2WGqfs/fXvnfki7tygIXnNzphbmVM3q1HNLn97B+JVN26EUnvXIdv1ywoHSU36ZclOruHaXOr6cowDPYMbYpu7tX1/7Br+2LR1nhProZrM2q39vByYn2ab2XkMzUAxiFkes7NjqsSezam+iNSxwZSV5zGHL9OztSduVOaB9dHsbr9B4tU+M1h0eYOVCzZzW0s2Znl9OelmqxestX1v7Dr+2LQ6HIh1G6OnJm+bg+05jnOq2c3jxpgO3ezQzIx8Spu0XpAvtV+pTtnai7mpzAPr/7/Mrqi4cXztocDehORJ70ykZ33JeNYnjrX5Wtr3xq61CdRii3NoRhVoilUZo6cm98qBZZzaOFbcKKvewhzH1sYwuy1ny3lZLguFeJwx74HaVLTL+W5OK5aZBzQ7DMRldrgRezd7ZyKbzS6QfP7kUg6Vu/29DrqhOIdhdgF/rDQ7m5JBwK0qqC/mdIxN2xqdZqfEpOUv7qv8Vv1QZrffeMX2RxKSF74zkeV4FpnjWYfCOgi19vc66IbiHLbZbVRjpdnZlMyuAVhXmptjZmeuCWphKV3HqGZnbZ4MrX1yCHdJgcKZc2Dx5O0C/YyNeJs3G7M1HhttTSUqMTTFruOPDcZ05UFbgzZGT03eNgfbcxzHaaR+YkyHzA7NJ8kn5Ay1tYF8ab8Faesq3upFSV61PQA8otklvwflicZn+82cFgmLnvTLDldauDhmUzzwZtU2R5x/PSSt7ZPfZvlj1/DHpmzS5rXrGz2Jp7UmN90xBxBj8vyqZhdIcqPWFfKz5Ub7Lfs9yLylFZXmCNeXxlqa6xiiy5pdGny2qRzX50V9/bAIyeYxJfMYb9BcW6yt7f0xeA6iv1ZQi+61a2MEOmpylxxUlBw+NMGC/MZ1ntn5c4NzQW12LwesM7xYYB51zcZz121w9wI7hujCZhfAwuXPHRtOfTvU+mXztJmdY/yg1oOzi6M39oxjZhdoWocxhmccbX1n56Ck3AAcc8/6J2Y305ybktkFcLz1ecyb9UKBMRPzwt91nZIDQHRtswvgm0BLgrpZtYIl6AnXDofrMOwKbhTUzElr+4W+2CP+WsH6dm29ay+NkT0H1QzrtByoMg7y1c1uxZ8byL2ROxzr+Qlue4W9g2c3r6N+w6vfxHsQnW52hBByJUQ0O0LI0IhodoSQoRHR7AghQyOi2RFChkZEsyOEDI2IZkcIGRoRzY4QMjQimh0hZGhENDtCyNCINrOjKIoaWTQ7iqIeQNP0F9EgwffV3VA0AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NClick.Target>
+                                                          </uix:NClick>
+                                                        </Sequence>
+                                                      </ActivityAction>
+                                                    </uix:NApplicationCard.Body>
+                                                    <uix:NApplicationCard.TargetApp>
+                                                      <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAZCSURBVFhHtZdZbFR1FMY/rFKRYWihbB1li+++GA2i2M3OdKMbXaGFQoHpCqV7yzi0dkFa2tKWtUhtqSxBozHGhCdNfCE+KLRsSlCagTFGhtJLGY0vf79771wo944kFHj45U4PCd93z/+c8z8XQgi/YOugiv04sOkokL4HyGjT8xLSdjciufEaYiqvI6KohUwneIR3t+P70yEQl2DU0Qc0HjGQf8wnONkEf2d17EHeIYHsToHVHwpElQhEFHY/Ih5WrDx/P0utkakY0Ezk7geSPwJSm0mL/DQja+9fyDsssLZLINEhEKkYuE3B2ao4ebsMO5ojIS5T66epGlCgiewuIK5WJaE+CEkNd5DWKmhM8AgoXiQzRoLxHt98ZSnKW2PU1A8/tQFiHwJyekAxIJIC0dv7YasQiC7j2xerBlYVncSKEiBlK04N8c2vUUNO/flnYUCm4DO1JhKdTLHdjLCCASXt4UUerCg+gaRCc2P3Wvxz4R2I66EUfwHiwtQNTGPqzSToIYNmJRPyv2e2A1GlwPv2eVhZND+l3o6JkcxA4YoyiV/fNIlLy0w0YKIBEw2YaGCmQUcf0MDmfhkz3/YS+XMSt8g5bPqkC/n9K5HTy6PYidzGrRCu7Bnit/Rz4herS1x5y0UDLhpw0YCLBlw0MGLQ0Qc0kHtAJghr940pVW5gn8q6nsPIODiz4Xg1xM1MvnnGHzQgaEDQgKABQQOCBgQN3DPo6AMaSnoz24OQ2uRBCqtcQ674yX8rsd3fYXObeXw4b7q4nnbrMQbGDTr6gAaSm1hoTbMRUz0KW6WX3IeV2Cr/VSrfuoOUq+1n4zPaOTD4ZWmAuJlykQYkGpBoQKIBiQYkGpBoYNSgow9ooMzOlmO/J9aEIrHqNSRVEz7TG17n0aRjTdtVRTi8QB4+gn0vsKUuzDOcvUDciLTQgIUGLDRgoQELDVhoYJFBRx/QgDNnFlryzWgtehkdZYHorQhEX20gBpzTMcTjcfYtRN6xK1jTovZ/mJ1mKk8ibyd+OJsOceMNTr9lT9GGjg2X0Zzvxt4CN3q3uXG0wo3jtW6ccbrxbeMVnPg4ABv7YtgNgrWimogsdsHqeAUJDhwYSOMcWABxkRpTNCDRgEA7U9yzTeAIz32gVuC0U+Drpvv4vDUI+fvnIOeApNwHKU3MQKGE+NpQxO5kazrh6E19ikno2HD3MQYkfNEajI37TMjuvo113XI7shgrJshSxFYBthqO63rUdCZAXKWOnIUnNHCLBrw04OUReHkEXh6Bl0fgxTfNbnzFDKzvmIWMDg+vZV7JnA3JDRPsjCXKXSFjo5HwelS1W1UTPz+ZgaU0sBxdBctpYDl6yhfjSM1iDDoW40zjqzja8gIy9wRzUfFwNxDcEQTWtMoZWMLuoLiP6AqaqEVd2yq1HvQ6+oAGDQC784GaQiCNN5+1OAC24hcRQ2Jldsh7wRx2gUfpBJnU5gnE0WQc0/+AamajjsfhRHUbLyi9jj6ggV25vAsoHs7LJqxkLiJKRsiojxFEls5G0q5ZXMc8hOlXkIiFcJBNpgFI4nN1k1FHH9DAJop/wDO0ymdZuUCZhDZ56rEYbRV/w1oWwnYzcRXzKOuYikQshGL+MejoAxqIc8hbj8Z8MkYERQVbbZyjOIQpNnE78hDhQyIWom5NfjDo6AMayv6X8oD5ZEy5eFLZ7/F1d1ntIax0E/Eo94GKRCxE7QI/GHT0AQ1l65VXcZV55A5htRNr+V3+ZyHMgonr2Liykql4iYWw+v1j0NEHNLjvgwMGvPNlFpJ7XD7UYosoGmf653IbMnEVHyWSDzcJJdyU/GPQ0Qc02Fbq7rfhkEws57468+XlU5758XUzaGAax+8iGrL4CCUB5OF3gQ6Djj6goRiQF1D7UDC2fHpeSX0ExeVbz1p+RqmNWPZ5OLvFj9D/YdDRBzQ4VBbxrVdzzA7zbdWPjqhSwnshqSFCOSK5x/2IPA6Djj6gwTMeRWy1r+9Z4fLvmCp+ATlPKetahrKyqcUVXuBXzB8GHX1Ag0LjhIK7fPB3StOPyOoM4VLKr6ROFikLNJ79/VwMZLZLStFpZHWcZCdQXO4KGpCRuySBc/65GNjYd5VcJP3IO2LF+oO+lvSJPxMDAv8BzoFenrstBboAAAAASUVORK5CYII=" InformativeScreenshot="cda03b861c4ccbdfc33c3aec4777cce9.png" Selector="&lt;html app='chrome.exe' title='Início - Tribunal Regional do Trabalho da 2ª Região'/&gt;" Url="https://ww2.trt2.jus.br/" />
+                                                    </uix:NApplicationCard.TargetApp>
+                                                  </uix:NApplicationCard>
+                                                </Sequence>
+                                              </FlowStep>
+                                            </FlowStep.Next>
+                                          </FlowStep>
+                                        </FlowStep.Next>
+                                      </FlowStep>
+                                      <x:Reference>__ReferenceID0</x:Reference>
+                                      <x:Reference>__ReferenceID1</x:Reference>
+                                    </Flowchart>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEachRow.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ForEachRow>
+                        <Assign sap:VirtualizedContainerService.HintSize="1089,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[NextStep]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1135,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,280" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[SystemException]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[SystemException]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
+              </FlowStep>
+            </FlowDecision.True>
+          </FlowDecision>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
+    </Flowchart>
+  </Sequence>
+</Activity>
